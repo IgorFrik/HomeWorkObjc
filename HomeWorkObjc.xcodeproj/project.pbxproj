@@ -13,6 +13,8 @@
 		782DB7C628BE7CDE00643FB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782DB7C428BE7CDE00643FB7 /* Main.storyboard */; };
 		782DB7C828BE7CE000643FB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782DB7C728BE7CE000643FB7 /* Assets.xcassets */; };
 		782DB7CB28BE7CE000643FB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782DB7C928BE7CE000643FB7 /* LaunchScreen.storyboard */; };
+		782DB7D528BE7D4C00643FB7 /* ObjcViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 782DB7D428BE7D4C00643FB7 /* ObjcViewController1.m */; };
+		782DB7D828BE7D5800643FB7 /* ObjcViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 782DB7D728BE7D5800643FB7 /* ObjcViewController2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,11 @@
 		782DB7C728BE7CE000643FB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782DB7CA28BE7CE000643FB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		782DB7CC28BE7CE000643FB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		782DB7D228BE7D4B00643FB7 /* HomeWorkObjc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HomeWorkObjc-Bridging-Header.h"; sourceTree = "<group>"; };
+		782DB7D328BE7D4C00643FB7 /* ObjcViewController1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcViewController1.h; sourceTree = "<group>"; };
+		782DB7D428BE7D4C00643FB7 /* ObjcViewController1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcViewController1.m; sourceTree = "<group>"; };
+		782DB7D628BE7D5800643FB7 /* ObjcViewController2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcViewController2.h; sourceTree = "<group>"; };
+		782DB7D728BE7D5800643FB7 /* ObjcViewController2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcViewController2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +67,14 @@
 				782DB7C028BE7CDE00643FB7 /* SceneDelegate.swift */,
 				782DB7C228BE7CDE00643FB7 /* ViewController.swift */,
 				782DB7C428BE7CDE00643FB7 /* Main.storyboard */,
+				782DB7D328BE7D4C00643FB7 /* ObjcViewController1.h */,
+				782DB7D428BE7D4C00643FB7 /* ObjcViewController1.m */,
+				782DB7D628BE7D5800643FB7 /* ObjcViewController2.h */,
+				782DB7D728BE7D5800643FB7 /* ObjcViewController2.m */,
 				782DB7C728BE7CE000643FB7 /* Assets.xcassets */,
 				782DB7C928BE7CE000643FB7 /* LaunchScreen.storyboard */,
 				782DB7CC28BE7CE000643FB7 /* Info.plist */,
+				782DB7D228BE7D4B00643FB7 /* HomeWorkObjc-Bridging-Header.h */,
 			);
 			path = HomeWorkObjc;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 				TargetAttributes = {
 					782DB7BA28BE7CDE00643FB7 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -139,7 +152,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				782DB7C328BE7CDE00643FB7 /* ViewController.swift in Sources */,
+				782DB7D828BE7D5800643FB7 /* ObjcViewController2.m in Sources */,
 				782DB7BF28BE7CDE00643FB7 /* AppDelegate.swift in Sources */,
+				782DB7D528BE7D4C00643FB7 /* ObjcViewController1.m in Sources */,
 				782DB7C128BE7CDE00643FB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +300,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = STW7SF37T7;
@@ -303,6 +319,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = IF.HomeWorkObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeWorkObjc/HomeWorkObjc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = STW7SF37T7;
@@ -331,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = IF.HomeWorkObjc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HomeWorkObjc/HomeWorkObjc-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
